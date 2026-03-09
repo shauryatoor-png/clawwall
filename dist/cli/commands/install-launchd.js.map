@@ -1,0 +1,1 @@
+{"version":3,"file":"install-launchd.js","sourceRoot":"","sources":["../../../src/cli/commands/install-launchd.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,cAAc,EAAE,MAAM,yBAAyB,CAAC;AAEzD,MAAM,UAAU,qBAAqB,CAAC,IAAuB;IAC3D,MAAM,IAAI,GAAG,MAAM,CAAC,IAAI,CAAC,IAAI,CAAC,IAAI,IAAI,CAAC;IACvC,cAAc,CAAC,IAAI,CAAC,CAAC;AACvB,CAAC"}

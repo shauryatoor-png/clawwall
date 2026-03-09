@@ -1,0 +1,52 @@
+{
+  "name": "clawwall",
+  "version": "0.1.0",
+  "description": "Policy firewall for OpenClaw — intercepts every tool call, blocks dangerous operations, and protects your files and credentials across any task the AI performs.",
+  "license": "MIT",
+  "homepage": "https://github.com/YOUR_ORG/clawwall#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_ORG/clawwall.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_ORG/clawwall/issues"
+  },
+  "keywords": ["ai", "firewall", "claude", "security", "openclaw", "agent", "policy"],
+  "type": "module",
+  "bin": {
+    "clawwall": "./dist/cli/index.js"
+  },
+  "main": "./dist/server/index.js",
+  "files": [
+    "dist/",
+    "install.sh",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "tsc",
+    "dev": "node --import tsx src/cli/index.ts",
+    "dev:server": "node --import tsx src/server/index.ts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^14.0.0",
+    "ink": "^5.2.0",
+    "ink-spinner": "^5.0.0",
+    "react": "^18.3.1",
+    "ws": "^8.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.0",
+    "@types/ws": "^8.18.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.0",
+    "vitest": "^4.0.0"
+  }
+}
